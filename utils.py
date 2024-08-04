@@ -67,7 +67,7 @@ def make_bigrams(lists_of_words_no_stops, min_count=5, threshold=.2, scoring='np
 
 def remove_stopwords(lists_of_words):
     stop_words = stopwords.words('english')
-    stop_words.extend(['five_star', 'five', 'star', 'stars', 'netflix'])
+    # stop_words.extend(['five_star', 'five', 'star', 'stars', 'netflix'])
     return [[word for word in simple_preprocess(str(doc)) if word not in stop_words] for doc in lists_of_words]
 
 
